@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AppLocker
 
 class ModeViewController: UIViewController {
 

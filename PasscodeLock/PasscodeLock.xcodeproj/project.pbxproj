@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4005D13420ADC12C00514F4D /* AppLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4005D13120ADC12C00514F4D /* AppLocker.swift */; };
-		4005D13520ADC12C00514F4D /* AppLocker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4005D13220ADC12C00514F4D /* AppLocker.xib */; };
-		4005D13620ADC12C00514F4D /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4005D13320ADC12C00514F4D /* UI.swift */; };
+		256783AE217875F400A037BB /* AppLocker.h in Headers */ = {isa = PBXBuildFile; fileRef = 256783AC217875F400A037BB /* AppLocker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		256783B1217875F400A037BB /* AppLocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256783AA217875F400A037BB /* AppLocker.framework */; };
+		256783B2217875F400A037BB /* AppLocker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 256783AA217875F400A037BB /* AppLocker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		256783B72178761300A037BB /* AppLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4005D13120ADC12C00514F4D /* AppLocker.swift */; };
+		256783B82178761300A037BB /* AppLocker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4005D13220ADC12C00514F4D /* AppLocker.xib */; };
+		256783B92178761300A037BB /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4005D13320ADC12C00514F4D /* UI.swift */; };
 		7C1F83411EA6276A0017CDD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1F83401EA6276A0017CDD5 /* AppDelegate.swift */; };
 		7C1F83461EA6276A0017CDD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C1F83441EA6276A0017CDD5 /* Main.storyboard */; };
 		7C1F83481EA6276A0017CDD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C1F83471EA6276A0017CDD5 /* Assets.xcassets */; };
@@ -17,7 +20,34 @@
 		7C3DA4F01ED2B9B500751DFB /* ModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DA4E91ED2B9B500751DFB /* ModeViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		256783AF217875F400A037BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C1F83351EA6276A0017CDD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 256783A9217875F400A037BB;
+			remoteInfo = AppLocker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		256783B6217875F400A037BB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				256783B2217875F400A037BB /* AppLocker.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		256783AA217875F400A037BB /* AppLocker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppLocker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		256783AC217875F400A037BB /* AppLocker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppLocker.h; sourceTree = "<group>"; };
+		256783AD217875F400A037BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4005D13120ADC12C00514F4D /* AppLocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppLocker.swift; sourceTree = "<group>"; tabWidth = 2; };
 		4005D13220ADC12C00514F4D /* AppLocker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppLocker.xib; sourceTree = "<group>"; };
 		4005D13320ADC12C00514F4D /* UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
@@ -31,16 +61,33 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7C1F833A1EA6276A0017CDD5 /* Frameworks */ = {
+		256783A7217875F400A037BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C1F833A1EA6276A0017CDD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256783B1217875F400A037BB /* AppLocker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		256783AB217875F400A037BB /* AppLocker */ = {
+			isa = PBXGroup;
+			children = (
+				256783AC217875F400A037BB /* AppLocker.h */,
+				256783AD217875F400A037BB /* Info.plist */,
+			);
+			path = AppLocker;
+			sourceTree = "<group>";
+		};
 		4005D12F20ADC12C00514F4D /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				7C1F833F1EA6276A0017CDD5 /* PasscodeLock */,
+				256783AB217875F400A037BB /* AppLocker */,
 				7C1F833E1EA6276A0017CDD5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				7C1F833D1EA6276A0017CDD5 /* PasscodeLock.app */,
+				256783AA217875F400A037BB /* AppLocker.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,7 +141,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		256783A5217875F400A037BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256783AE217875F400A037BB /* AppLocker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		256783A9217875F400A037BB /* AppLocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256783B5217875F400A037BB /* Build configuration list for PBXNativeTarget "AppLocker" */;
+			buildPhases = (
+				256783A5217875F400A037BB /* Headers */,
+				256783A6217875F400A037BB /* Sources */,
+				256783A7217875F400A037BB /* Frameworks */,
+				256783A8217875F400A037BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppLocker;
+			productName = AppLocker;
+			productReference = 256783AA217875F400A037BB /* AppLocker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		7C1F833C1EA6276A0017CDD5 /* PasscodeLock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C1F834F1EA6276A0017CDD5 /* Build configuration list for PBXNativeTarget "PasscodeLock" */;
@@ -100,10 +178,12 @@
 				7C1F83391EA6276A0017CDD5 /* Sources */,
 				7C1F833A1EA6276A0017CDD5 /* Frameworks */,
 				7C1F833B1EA6276A0017CDD5 /* Resources */,
+				256783B6217875F400A037BB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				256783B0217875F400A037BB /* PBXTargetDependency */,
 			);
 			name = PasscodeLock;
 			productName = PasscodeLock;
@@ -120,6 +200,11 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Oleg Ryasnoy";
 				TargetAttributes = {
+					256783A9217875F400A037BB = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = 32Y52676KN;
+						ProvisioningStyle = Automatic;
+					};
 					7C1F833C1EA6276A0017CDD5 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 32Y52676KN;
@@ -142,11 +227,20 @@
 			projectRoot = "";
 			targets = (
 				7C1F833C1EA6276A0017CDD5 /* PasscodeLock */,
+				256783A9217875F400A037BB /* AppLocker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		256783A8217875F400A037BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256783B82178761300A037BB /* AppLocker.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7C1F833B1EA6276A0017CDD5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,25 +248,39 @@
 				7C1F834B1EA6276A0017CDD5 /* LaunchScreen.storyboard in Resources */,
 				7C1F83481EA6276A0017CDD5 /* Assets.xcassets in Resources */,
 				7C1F83461EA6276A0017CDD5 /* Main.storyboard in Resources */,
-				4005D13520ADC12C00514F4D /* AppLocker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		256783A6217875F400A037BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256783B72178761300A037BB /* AppLocker.swift in Sources */,
+				256783B92178761300A037BB /* UI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7C1F83391EA6276A0017CDD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7C1F83411EA6276A0017CDD5 /* AppDelegate.swift in Sources */,
-				4005D13620ADC12C00514F4D /* UI.swift in Sources */,
 				7C3DA4F01ED2B9B500751DFB /* ModeViewController.swift in Sources */,
-				4005D13420ADC12C00514F4D /* AppLocker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		256783B0217875F400A037BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 256783A9217875F400A037BB /* AppLocker */;
+			targetProxy = 256783AF217875F400A037BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7C1F83441EA6276A0017CDD5 /* Main.storyboard */ = {
@@ -194,6 +302,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		256783B3217875F400A037BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 32Y52676KN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = AppLocker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.venj.AppLocker;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		256783B4217875F400A037BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 32Y52676KN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = AppLocker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.venj.AppLocker;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		7C1F834D1EA6276A0017CDD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -310,7 +479,9 @@
 		7C1F83501EA6276A0017CDD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 32Y52676KN;
 				INFOPLIST_FILE = PasscodeLock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -324,7 +495,9 @@
 		7C1F83511EA6276A0017CDD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 32Y52676KN;
 				INFOPLIST_FILE = PasscodeLock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -338,6 +511,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		256783B5217875F400A037BB /* Build configuration list for PBXNativeTarget "AppLocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256783B3217875F400A037BB /* Debug */,
+				256783B4217875F400A037BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7C1F83381EA6276A0017CDD5 /* Build configuration list for PBXProject "PasscodeLock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
