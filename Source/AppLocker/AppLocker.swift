@@ -80,6 +80,15 @@ public class AppLocker: UIViewController {
       }
     }
   }
+
+  public override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    if UI_USER_INTERFACE_IDIOM() == .phone {
+      return [.portrait, .portraitUpsideDown]
+    }
+    else {
+      return .all
+    }
+  }
   
   private func precreateSettings () { // Precreate settings for change mode
     mode = .create
